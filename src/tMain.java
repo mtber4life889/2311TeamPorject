@@ -10,7 +10,7 @@ public class tMain {
 		String sentence = sc.next(); 	
 		
 		Rule1 Rule1 = new Rule1();
-        if (!Rule1.check(sentence)) 
+        if (Rule1.check(sentence)) 
         {
         	System.out.println(Rule1.message());
         }
