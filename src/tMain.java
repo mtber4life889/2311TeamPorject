@@ -12,6 +12,7 @@ public class tMain {
         GrammarChecker checker = new GrammarChecker();
         checker.addRule(new Rule1());
         checker.addRule(new Rule2());
+        checker.addRule(new Rule3());
         // now you just add rules here like this
         
         checker.check(sentence);

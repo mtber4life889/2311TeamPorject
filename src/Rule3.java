@@ -1,7 +1,7 @@
-public class Rule2 extends Rule
+public class Rule3 extends Rule
 {
   // 3) Check each word of the sentence and make sure the character between them is a single space character, 
-  // if it isn’t return a true value for rule 3
+  // if it isn't return a true value for rule 3
   
 		public static boolean containsWhiteSpace(final String sentence){
 		    if(sentence != null){
@@ -13,5 +13,11 @@ public class Rule2 extends Rule
 		    }
 		    return false;
 		}
+
+@Override
+public boolean check(String sentence) {
+	// TODO Auto-generated method stub
+	return false;
+}
 
 }
