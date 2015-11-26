@@ -2,8 +2,14 @@
 public class tMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		if (!rule1.check(false))
+		{
+			System.out.println("fuk you");
+		}
+		else
+		{
+			System.out.println("u sukc");
+		}
 	}
-
 }
