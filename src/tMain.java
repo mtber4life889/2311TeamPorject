@@ -13,6 +13,7 @@ public class tMain {
         checker.addRule(new Rule1());
         checker.addRule(new Rule2());
         checker.addRule(new Rule3());
+        checker.addRule(new Rule4());
 
         
         checker.check(sentence);
