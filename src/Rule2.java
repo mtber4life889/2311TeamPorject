@@ -3,7 +3,7 @@ public class Rule2
 {
 	public static boolean check(String sentence)
 	{
-		if (Character.isLowerCase(sentence.charAt(0))==true)
+		if (sentence.endsWith(".") || sentence.endsWith("?") || sentence.endsWith("!"))
 		{
 			return false;
 		}
