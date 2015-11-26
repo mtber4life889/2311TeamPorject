@@ -5,11 +5,11 @@ public class Rule2 extends Rule
 	{
 		if (sentence.endsWith(".") || sentence.endsWith("?") || sentence.endsWith("!"))
 		{
-			return false;
+			return true;
 		}
 		else
 		{
-		return true;
+		return false;
 		}
 	}
 	

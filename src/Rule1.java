@@ -5,11 +5,11 @@ public class Rule1 extends Rule
 	{	
 		if (Character.isUpperCase(sentence.charAt(0))==true)
 		{
-			return false;
+			return true;
 		}
 		else
 		{
-		return true;
+		return false;
 		}
 	}
 	
