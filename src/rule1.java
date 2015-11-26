@@ -1,7 +1,7 @@
 
 public class rule1 
 {
-	public static boolean check(boolean b)
+	public boolean check(boolean b)
 	{
 		return true;
 	}
@@ -11,7 +11,7 @@ public class rule1
 		return "error";
 	}
 
-	public static void message() 
+	public void message() 
 	{
 		return;
 		

@@ -2,8 +2,9 @@
 public class tMain {
 
 	public static void main(String[] args) {
+		rule1 cc = new rule1();
 
-		if (!rule1.check(false))
+		if (cc.check(false))
 		{
 			System.out.println("fuk you");
 		}
