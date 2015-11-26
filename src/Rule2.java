@@ -15,6 +15,6 @@ public class Rule2 extends Rule
 	
 	public String message()
 	{
-		return "error2";
+		return "rule 2 error";
 	}
 }
