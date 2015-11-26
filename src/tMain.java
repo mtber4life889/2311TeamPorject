@@ -9,14 +9,10 @@ public class tMain {
 		System.out.println("Please Input your sentence(s)");
 		String sentence = sc.next(); 	
 		
-		Rule1 Rule1 = new Rule1();
-        if (Rule1.check(sentence)) 
-        {
-        	System.out.println(Rule1.message());
-        }
-        if (Rule2.check(sentence))
-        {
-        	System.out.println(Rule2.message());
-        }
+        GrammarChecker checker = new GrammarChecker();
+        checker.addRule(new Rule1());
+        // now you just add rules here like this
+        
+        checker.check(sentence);
 	}
 }

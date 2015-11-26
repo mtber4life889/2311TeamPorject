@@ -1,5 +1,5 @@
 
-public class Rule1 
+public class Rule1 extends Rule 
 {
 	public boolean check(String sentence)
 	{	

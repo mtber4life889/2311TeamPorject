@@ -1,7 +1,7 @@
 
-public class Rule2
+public class Rule2 extends Rule
 {
-	public static boolean check(String sentence)
+	public boolean check(String sentence)
 	{
 		if (sentence.endsWith(".") || sentence.endsWith("?") || sentence.endsWith("!"))
 		{
@@ -13,7 +13,7 @@ public class Rule2
 		}
 	}
 	
-	public static String message()
+	public String message()
 	{
 		return "error2";
 	}
