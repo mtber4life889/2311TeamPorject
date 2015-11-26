@@ -1,16 +1,18 @@
+import java.util.Scanner;
 
 public class tMain {
 
 	public static void main(String[] args) {
-		rule1 cc = new rule1();
-
-		if (cc.check(false))
-		{
-			System.out.println("fuk you");
-		}
-		else
-		{
-			System.out.println("u sukc");
-		}
+		
+		Scanner sc = new Scanner(System.in); 
+		
+		System.out.println("Please Input your sentence(s)");
+		String sentence = sc.next(); 	
+		
+		Rule1 Rule1 = new Rule1();
+        if (!Rule1.check(sentence)) 
+        {
+        	System.out.println(Rule1.message());
+        }
 	}
 }
