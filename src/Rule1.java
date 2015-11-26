@@ -15,6 +15,6 @@ public class Rule1
 	
 	public String message()
 	{
-		return "error";
+		return "error1";
 	}
 }

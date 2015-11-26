@@ -14,5 +14,9 @@ public class tMain {
         {
         	System.out.println(Rule1.message());
         }
+        if (Rule2.check(sentence))
+        {
+        	System.out.println(Rule2.message());
+        }
 	}
 }
