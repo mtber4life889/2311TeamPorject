@@ -20,7 +20,7 @@ public class tMain {
         
         if (checker.check(sentence))
         {
-        	System.out.println("ur face");
+        	System.out.println("NOTHINGS WRONG TRY AGAIN SORRY.");
 	    }
   }
 }
