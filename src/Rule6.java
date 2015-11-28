@@ -1,17 +1,15 @@
+public class Rule6 extends Rule {
+	
+	public boolean check(String sentence) {
+			
+		    return (sentence == null) ? false : sentence.matches("[^0-9 ]");
+		    // hopefully it works 
+		}	
 
-public class Rule6 extends Rule
+	public String message()
 	{
-			public boolean check(String sentence) {
-				
-			    return (sentence == null) ? false : sentence.matches("[^A-Za-z0-9 ]");
-			}	
+		return "rule 6 error";
 	
-		public String message()
-		{
-			return "rule 6 error";
-		
-		}
 	}
-	
-	
-	
+}
+
