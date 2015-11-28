@@ -1,5 +1,3 @@
-import java.util.regex.Pattern;
-
 public class Rule5 extends Rule 
 {
 	public boolean check(String sentence)
