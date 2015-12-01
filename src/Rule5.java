@@ -8,13 +8,17 @@ public class Rule5 extends Rule
 		  
 			   	 Pattern Neg = Pattern.compile("\\b(n't|not|never|no|nothing|nowhere|non){2}\\b");  
 			   	 Matcher Matcher = Neg.matcher(sentence); 
-			     if (Matcher.find()){
+			     if (Matcher.find())
 			     {
-			    	return true; 
+			    	return false; 
 			     }
-			     return false; 
-	
+			     else
+			     {
+			    	 return true;
+			     }
+			    
 	}
+			     
 	public String message()
 		{
 			return "rule 5 error"; 
