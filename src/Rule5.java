@@ -6,8 +6,9 @@ public class Rule5 extends Rule
 	public boolean check(String sentence)
 	{
 		  
-			   	 Pattern Neg = Pattern.compile("\\b(n't|not|never|no|nothing|nowhere|non){2}\\b");  
+			   	 Pattern Neg = Pattern.compile(".*(n't|not|never|no|nothing|nowhere|non).*{2,3}");  
 			   	 Matcher Matcher = Neg.matcher(sentence); 
+			   	 
 			     if (Matcher.find())
 			     {
 			    	return false; 
@@ -24,3 +25,12 @@ public class Rule5 extends Rule
 			return "rule 5 error"; 
 		}
 }
+
+/* Takes string 
+ * Split string into array elements 
+ * Compare array Neg and split array to find a two or more element match
+ * Out put true if matches
+ * Out put error, Neg not present
+ */
+
+
