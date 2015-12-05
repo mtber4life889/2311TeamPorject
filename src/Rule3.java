@@ -14,15 +14,20 @@ public class Rule3 extends Rule
 		    return false;
 		}*/
 
-public boolean check(String sentence) {
-    if(sentence != null){
-        for(int i = 0; i < sentence.length(); i++){
-            if(Character.isWhitespace(sentence.charAt(i))){
-                return true;
-            }
-        }
+public boolean check(String sentence)
+{
+    if(sentence.contains("  "))
+    {
+    	return false;
     }
-	return false;
+    else
+    {
+    	return true;
+    }
+}
+public String message()
+{
+	return "rule 3 error";
 }
 
 }
