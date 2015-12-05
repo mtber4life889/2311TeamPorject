@@ -2,6 +2,37 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Rule4 extends Rule 
 {
+	public boolean getSpecialChars(String s) {
+		 String[] theSplit = s.split("\\s+");
+		 for(int i=0; i<=s.length(); i++){
+		 if( i == s.length())
+		 {
+			 break;
+		 }
+		 System.out.println(theSplit[i]);
+		 }
+		
+
+	     Pattern p = Pattern.compile("[^A-Za-z0-9]");
+	     Matcher m = p.matcher(s);
+	     boolean b = m.find();
+	     if (b == true)
+	        System.out.println("There is a special character in my string ");
+	     else
+	         System.out.println("There is no special char.");
+	     return b;
+	 }
+	public boolean check(String sentence)
+	{	
+		if (getSpecialChars(sentence))
+		{
+			return true;
+		}
+		else
+		{
+		return false;
+		}
+	}
 /*	//This doesn't work at all i know it doesn't but I think it's close to what we need
 	//If we can figure out this class we can do the other rules that use this same logic
 	Pattern SL_Pattern = Pattern.compile("\\W");
@@ -28,7 +59,7 @@ public class Rule4 extends Rule
    			System.out.println("There is a special character in my string");
    		*/
    		
-		public boolean check(String sentence) 
+/*		public boolean check(String sentence) 
 		{
 			 String patternString = "[^A-Za-z0-9]";
 			 Pattern p = Pattern.compile("\\s+");
@@ -76,7 +107,7 @@ public class Rule4 extends Rule
 			 		else return true;*/
 		    
 		//return (sentence == null) ? false : sentence.matches("[^A-Za-z0-9 ]");
-}
+
 	public String message()
 	{
 		return "rule 4 error";
