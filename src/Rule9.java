@@ -1,4 +1,18 @@
-Rule. Use this he/him method to decide whether who or whom is correct:
+public class Rule9 extends Rule {
+	
+	public boolean check(String sentence) {
+			
+		    return true;
+		}	
+
+	public String message()
+	{
+		return "rule 6 error";
+	
+	}
+}
+
+//Rule. Use this he/him method to decide whether who or whom is correct:
 
 /*Who/Whom wrote the letter?
   He wrote the letter. Therefore, who is correct.

@@ -30,9 +30,53 @@ public class Rule4 extends Rule
    		
 		public boolean check(String sentence) 
 		{
-		return (sentence == null) ? false : sentence.matches("[^A-Za-z0-9 ]");
-		}
-	
+			 String patternString = "[^A-Za-z0-9]";
+			 Pattern p = Pattern.compile("\\s+");
+		     Matcher m = p.matcher(sentence);
+		     boolean b = m.find();
+			
+			String []strArray=sentence.split("\\s+");
+			for (int i=0; i<strArray.length;i++){
+				System.out.println(strArray[i]);
+				if (b){
+					return true;
+				}
+			}
+			return false;
+			/* String[] theSplit = sentence.split("\\w+");
+			 String patternString = "[^A-Za-z0-9]";
+			 Pattern p = Pattern.compile("\\w+");
+		     Matcher m = p.matcher(sentence);
+		     
+		     
+		    //boolean b = m.matches();
+		     //boolean b = m.find();
+		     while(m.find()){
+		    	 if (m.find(patternString))
+		     }
+		     
+		     if ()
+		     {
+		        return false;
+		     }
+		     else
+		     {
+		        return true;
+		     }*/
+		     /*String[] theSplit = sentence.split("\\s+");
+		    Pattern Conj = Pattern.compile("[^A-Za-z0-9]");  
+			Matcher match = Conj.matcher(sentence); 
+			System.out.print(theSplit);
+			
+			return true;*/
+		/*	 		if (match.find())
+			 		{
+			 				return false; 
+			 		}
+			 		else return true;*/
+		    
+		//return (sentence == null) ? false : sentence.matches("[^A-Za-z0-9 ]");
+}
 	public String message()
 	{
 		return "rule 4 error";
