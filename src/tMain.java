@@ -24,7 +24,7 @@ public class tMain {
         checker.addRule(new Rule10()); //this works
 
         
-        checker.check(sentence);
+        //checker.check(sentence);  // this was why i got repeated console outputs -Elvin 
         
         if (checker.check(sentence))
         {
