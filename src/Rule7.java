@@ -19,3 +19,5 @@ public class Rule7 extends Rule
 	}
 }
 
+//Rule 7 works as I wrote in the rule list but only cruely, would suggest
+//trying to further improve it.
