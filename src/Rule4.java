@@ -6,24 +6,17 @@ public class Rule4 extends Rule
 	{
 		int testInt = 0;
 		String[] theSplit = sentence.split("\\s+");
-		
-		for(int i=0; i<=theSplit.length-1; i++){
-			
-		    Pattern p = Pattern.compile("[^A-Za-z0-9 \\.\\,\\?\\!\\'\\-\\:\\(\\)]");
-		    Matcher m = p.matcher(sentence);
-		    boolean b = m.find();
-		    
-		    if (b == true)
-		    {
-		    	testInt=1;
-		    }
+		Pattern pattern = Pattern.compile("[^A-Za-z0-9 \\.\\,\\?\\!\\'\\-\\:\\(\\)]");
+        
+		for(int i = 0; i < theSplit.length; i++)
+        {
+            if (pattern.matcher(theSplit[i]).find())
+            {
+                return false;
+            }
 		 }
-		 if(testInt == 1)
-		 {
-			 return false;
-		 }
-		return true;
 		 
+		 return true;
 	}
 
 	public String message()
