@@ -7,7 +7,7 @@ public class Rule9 extends Rule {
 
 	public String message()
 	{
-		return "rule 6 error";
+		return "rule 9 error";
 	
 	}
 }
