@@ -13,10 +13,12 @@ public class tMain {
         checker.addRule(new Rule1()); //this works
         checker.addRule(new Rule2()); //this works, seriously no joke
         checker.addRule(new Rule3()); //this works
-        checker.addRule(new Rule4());
-        //checker.addRule(new Rule5()); this somewhat works but practical application would be impossible
+        checker.addRule(new Rule4()); //this works
+        //checker.addRule(new Rule5());
         //checker.addRule(new Rule6());
+        //checker.addRule(new Rule7());
         //checker.addRule(new Rule8());
+        checker.addRule(new Rule9());
 
         
         checker.check(sentence);
