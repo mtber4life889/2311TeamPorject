@@ -8,7 +8,8 @@ public class tMain {
 		
 		System.out.println("Please Input your sentence(s) or type exit to quit.");
 		String sentence = sc.nextLine();
-		
+		try
+		{
 		do
 		{
         GrammarChecker checker = new GrammarChecker();
@@ -32,5 +33,9 @@ public class tMain {
         sentence = sc.nextLine();
   }
 		while(!sentence.equals("exit"));
+		} 
+		catch (Exception e){
+			System.out.println("You broke it good job");
+		}
 }
 }
