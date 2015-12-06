@@ -20,7 +20,7 @@ public class tMain {
         //checker.addRule(new Rule6());
         checker.addRule(new Rule7()); //this works, but if you have time work on it
         //checker.addRule(new Rule8());
-        //checker.addRule(new Rule9());
+        checker.addRule(new Rule9()); //this works
         checker.addRule(new Rule10()); //this works
 
         
