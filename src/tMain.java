@@ -6,10 +6,10 @@ public class tMain {
 		
 		Scanner sc = new Scanner(System.in); 
 		
-		System.out.println("Please Input your sentence(s)");
+		System.out.println("Please Input your sentence(s) or type exit to quit.");
 		String sentence = sc.nextLine();
 		
-		while(!sentence.equals("exit"))
+		do
 		{
         GrammarChecker checker = new GrammarChecker();
         checker.addRule(new Rule1()); //this works
@@ -24,8 +24,6 @@ public class tMain {
         checker.addRule(new Rule10()); //this works
 
         
-        //checker.check(sentence);  // this was why i got repeated console outputs -Elvin 
-        
         if (checker.check(sentence))
         {
         	System.out.println("NOTHINGS WRONG TRY AGAIN SORRY.");
@@ -33,5 +31,6 @@ public class tMain {
         System.out.println("Please Input your sentence(s) or type exit to quit.");
         sentence = sc.nextLine();
   }
+		while(!sentence.equals("exit"));
 }
 }
