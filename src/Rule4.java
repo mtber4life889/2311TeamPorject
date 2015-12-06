@@ -1,10 +1,8 @@
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Rule4 extends Rule 
 {
 	public boolean check(String sentence)
 	{
-		int testInt = 0;
 		String[] theSplit = sentence.split("\\s+");
 		Pattern pattern = Pattern.compile("[^A-Za-z0-9 \\.\\,\\?\\!\\'\\-\\:\\(\\)]");
         

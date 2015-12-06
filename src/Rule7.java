@@ -1,9 +1,16 @@
+import java.util.regex.Pattern;
 
 public class Rule7 extends Rule 
 {
 	public boolean check(String sentence)
 	{	
-		return true;
+		Pattern pattern = Pattern.compile("s are");
+        if (pattern.matcher(sentence).find())
+        {
+            return false;
+        }
+		
+	    return true;
 	}
 	
 	public String message()

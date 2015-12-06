@@ -9,6 +9,8 @@ public class tMain {
 		System.out.println("Please Input your sentence(s)");
 		String sentence = sc.nextLine();
 		
+		while(!sentence.equals("exit"))
+		{
         GrammarChecker checker = new GrammarChecker();
         checker.addRule(new Rule1()); //this works
         checker.addRule(new Rule2()); //this works, seriously no joke
@@ -16,9 +18,10 @@ public class tMain {
         checker.addRule(new Rule4()); //this works
         //checker.addRule(new Rule5());
         //checker.addRule(new Rule6());
-        //checker.addRule(new Rule7());
+        checker.addRule(new Rule7());
         //checker.addRule(new Rule8());
-        checker.addRule(new Rule9());
+        //checker.addRule(new Rule9());
+        checker.addRule(new Rule10()); //this works
 
         
         checker.check(sentence);
@@ -27,5 +30,8 @@ public class tMain {
         {
         	System.out.println("NOTHINGS WRONG TRY AGAIN SORRY.");
 	    }
+        System.out.println("Please Input your sentence(s) or type exit to quit.");
+        sentence = sc.nextLine();
   }
+}
 }
