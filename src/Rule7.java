@@ -15,7 +15,7 @@ public class Rule7 extends Rule
 	
 	public String message()
 	{
-		return "rule 7 error";
+		return "7. Noun is not plural. Please change.";
 	}
 }
 
