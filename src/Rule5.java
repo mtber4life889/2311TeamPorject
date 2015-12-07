@@ -18,7 +18,7 @@ public class Rule5 extends Rule
 	}
 	public String message()
 		{
-			return "rule 5 error"; 
+			return "5. Double negatives detected. Please change."; 
 		}
 }
 
