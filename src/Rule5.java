@@ -4,20 +4,21 @@ public class Rule5 extends Rule
 {
 	public boolean check(String sentence)
 	{
+		if(sentence.matches("not|Not"))
+		{
 			Pattern pattern = Pattern.compile("not|Not(\\s)not|Not");
 	        if (pattern.matcher(sentence).find())
 	        {
-	            return false;
+	            return true;
 	        }
-			
-		    return true;
+		    	return false;
 		}
-	
+		else return false; 
+		
+	}
 	public String message()
 		{
 			return "rule 5 error"; 
 		}
 }
-
-
 
