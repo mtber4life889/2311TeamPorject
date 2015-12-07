@@ -17,12 +17,12 @@ public class tMain {
         checker.addRule(new Rule2()); //this works
         checker.addRule(new Rule3()); //this works
         checker.addRule(new Rule4()); //this works
-        //checker.addRule(new Rule5());
-        //checker.addRule(new Rule6());
+        checker.addRule(new Rule5());
+        checker.addRule(new Rule6());
         checker.addRule(new Rule7()); //this works
-        //checker.addRule(new Rule8());
+        checker.addRule(new Rule8());
         checker.addRule(new Rule9()); //this works
-        checker.addRule(new Rule10()); //this works
+        checker.addRule(new Rule10());//this works
 
         
         if (checker.check(sentence))
