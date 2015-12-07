@@ -14,7 +14,7 @@ public class Rule10 extends Rule {
 
 	public String message()
 	{
-		return "rule 10 error";
+		return "10. Letter " + "i" + " isn't capitalized. Please change.";
 	
 	}
 }
