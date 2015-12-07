@@ -19,6 +19,6 @@ public class Rule6 extends Rule
 
 	public String message()
 	{
-		return "rule 6 error";
+		return "6. Numbers Detected. Please Delete.";
 	}
 }
