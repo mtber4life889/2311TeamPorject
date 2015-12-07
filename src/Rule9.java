@@ -29,7 +29,7 @@ public class Rule9 extends Rule {
 			
 	public String message()
 	{
-		return "rule 9 error";
+		return "Improper use of who/whom. Please correct.";
 	}
 }
 
