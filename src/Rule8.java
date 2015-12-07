@@ -5,33 +5,26 @@ public class Rule8 extends Rule
 {
 	public boolean check(String sentence)
 	{
-		 if (sentence.matches("\\s(')."))
-		 {
-			 Pattern Conj = Pattern.compile("\\b(and|but|for|nor|or|so|yet)\\b");  
+		if (sentence.matches(".*,.*"))
+		{
+			 Pattern Conj = Pattern.compile(".*,(\\s)and|but|nor|so|yet");  
 			 Matcher match = Conj.matcher(sentence); 
 			 		if (match.find())
 			 		{
-			 				return false; 
+			 				return true; 
 			 		}
-			 		else return true;
-			 		
-		
-		 }
-		 else return false; 
+			 		else return false;
+		}
+		else return true; 
 	}
+	
 	
 	public String message()
 		{
-			return "rule 8 error";
+			return "8. Conjunction not detected after comma.";
 		}
 	
 }
 
 
 
-/* Takes string 
- * Split string into array elements 
- * Compare array conj and split array to find single element matches 
- * Out put true if matches
- * Out put error, conj not present
- */
