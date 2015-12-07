@@ -15,6 +15,6 @@ public class Rule2 extends Rule
 	
 	public String message()
 	{
-		return "rule 2 error";
+		return "Sentence doesn't end with a punctuation.";
 	}
 }
