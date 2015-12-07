@@ -19,6 +19,6 @@ public class Rule4 extends Rule
 
 	public String message()
 	{
-		return "rule 4 error";
+		return "4. Symbols Detected please delete.";
 	}
 }
