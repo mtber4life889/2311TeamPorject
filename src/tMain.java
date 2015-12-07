@@ -4,6 +4,7 @@ public class tMain {
 
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in); 
 		
 		System.out.println("Please Input your sentence(s) or type exit to quit.");
