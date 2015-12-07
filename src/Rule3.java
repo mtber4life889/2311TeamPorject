@@ -14,7 +14,7 @@ public class Rule3 extends Rule
     }
     public String message()
     {
-    	return "rule 3 error";
+    	return "3. Double white space detected. Please Delete.";
     }
 
     }
