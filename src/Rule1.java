@@ -15,6 +15,6 @@ public class Rule1 extends Rule
 	
 	public String message()
 	{
-		return "rule 1 error";
+		return "1. First Character isn't capitalized.";
 	}
 }
